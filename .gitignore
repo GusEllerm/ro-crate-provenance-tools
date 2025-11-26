@@ -27,9 +27,23 @@ Thumbs.db
 dist/
 build/
 *.egg-info/
+.eggs/
+*.whl
 
 # Testing
 .pytest_cache/
 .coverage
 htmlcov/
+.tox/
 
+# Ruff
+.ruff_cache/
+
+# Secrets / credentials (IMPORTANT: never commit!)
+*.secret
+*.key
+.env
+.env.local
+
+# Secrets
+pypi.secret

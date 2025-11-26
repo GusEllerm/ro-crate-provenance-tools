@@ -5,7 +5,7 @@ This document is a practical cheatsheet.
 Assume you have:
 
 ```python
-from coastsat_prov import ProvenanceCrate
+from provenance_context import ProvenanceCrate
 
 crate = ProvenanceCrate.from_file("path/to/ro-crate-metadata.json")
 ```
