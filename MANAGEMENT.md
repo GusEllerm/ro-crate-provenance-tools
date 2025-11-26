@@ -116,9 +116,9 @@ GitHub Actions will:
 pip install --upgrade provenance-context
 ```
 
-## 🛠️ Available Commands
+## make commands
 
-### Development
+### dev
 
 ```bash
 make install-dev    # Install with dev dependencies
@@ -129,78 +129,15 @@ make format         # Format code
 make clean          # Clean build artifacts
 ```
 
-### Building
+### build
 
 ```bash
 make build          # Build distribution packages
 make publish-check  # Check package before publishing
 ```
 
-### Manual Publishing (Alternative)
+## Versioning 
 
-If you prefer manual publishing:
-
-```bash
-# Build and check
-make build
-make publish-check
-
-# Publish (requires PyPI credentials)
-export TWINE_USERNAME=__token__
-export TWINE_PASSWORD=pypi-your-token-here
-make publish
-```
-
-## 📁 Project Structure
-
-```
-.
-├── .github/
-│   └── workflows/
-│       ├── ci.yml          # Continuous Integration (tests on PR/push)
-│       └── publish.yml     # Publishing to PyPI (on release)
-├── provenance_context/     # Main package
-├── tests/                  # Test suite
-├── scripts/
-│   └── bump-version.sh     # Version bumping script
-├── pyproject.toml          # Package config & version
-├── Makefile                # Common commands
-├── CHANGELOG.md            # Release history
-├── DEVELOPMENT.md          # Development guide
-├── RELEASE.md              # Detailed release process
-└── MANAGEMENT.md           # This file
-```
-
-## 🔐 Credentials Management
-
-### For GitHub Actions (Automated)
-
-1. Settings → Secrets and variables → Actions
-2. Add secret: `PYPI_API_TOKEN`
-3. Value: Your PyPI API token (`pypi-xxxxx...`)
-
-### For Local Publishing
-
-**Option 1: Environment Variables**
-```bash
-export TWINE_USERNAME=__token__
-export TWINE_PASSWORD=pypi-your-token-here
-```
-
-**Option 2: Config File** (`~/.pypirc`)
-```ini
-[pypi]
-username = __token__
-password = pypi-your-token-here
-```
-
-## 🔄 Version Management
-
-### Semantic Versioning
-
-- **MAJOR** (1.0.0): Breaking changes
-- **MINOR** (0.1.0): New features, backwards compatible
-- **PATCH** (0.0.1): Bug fixes, backwards compatible
 
 ### Current Version
 
@@ -268,13 +205,12 @@ make test
 ## 📚 Additional Resources
 
 - **Development**: See [DEVELOPMENT.md](DEVELOPMENT.md)
-- **Releases**: See [RELEASE.md](RELEASE.md)
 - **Tests**: See [tests/README.md](tests/README.md)
 - **User docs**: See [README.md](README.md)
 
 ## 🔗 Links
 
 - **GitHub**: https://github.com/GusEllerm/ro-crate-provenance-tools
-- **PyPI**: https://pypi.org/project/provenance-context/ (after first release)
+- **PyPI**: https://pypi.org/project/provenance-context/
 - **Issues**: https://github.com/GusEllerm/ro-crate-provenance-tools/issues
 

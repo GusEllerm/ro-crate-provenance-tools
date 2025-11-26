@@ -63,7 +63,7 @@ packages = ["provenance_context"]
 
 [tool.ruff]
 line-length = 100
-target-version = "0.2.0"
+target-version = "py38"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "N", "W", "UP"]

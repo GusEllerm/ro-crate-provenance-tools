@@ -17,19 +17,19 @@ if ! [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
   exit 1
 fi
 
-# Get current version
-CURRENT_VERSION=$(grep -E '^version = ' pyproject.toml | sed -E 's/version = "(.+)"/\1/')
+# Get current version (only from [project] section)
+CURRENT_VERSION=$(grep -A 5 '^\[project\]' pyproject.toml | grep -E '^version = ' | sed -E 's/version = "(.+)"/\1/')
 
 echo "Current version: $CURRENT_VERSION"
 echo "New version: $VERSION"
 
-# Update pyproject.toml
+# Update pyproject.toml - only the version in [project] section
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  # macOS
-  sed -i '' "s/version = \".*\"/version = \"$VERSION\"/" pyproject.toml
+  # macOS - match version line within [project] section
+  sed -i '' '/^\[project\]/,/^\[/ s/^version = ".*"/version = "'"$VERSION"'"/' pyproject.toml
 else
   # Linux
-  sed -i "s/version = \".*\"/version = \"$VERSION\"/" pyproject.toml
+  sed -i '/^\[project\]/,/^\[/ s/^version = ".*"/version = "'"$VERSION"'"/' pyproject.toml
 fi
 
 echo "✅ Updated pyproject.toml"
