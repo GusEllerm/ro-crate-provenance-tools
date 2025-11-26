@@ -1,0 +1,27 @@
+INFO - Please read the following information carefully:
+
+INFO - find_wl_contours2: A method for extracting shorelines that uses the sand water interface detected with the model to refine the threshold that's used to detect shorelines .
+  - This is the default method used when there are enough sand pixels within the reference shoreline buffer.
+
+INFO - find_wl_contours1: This shoreline extraction method uses a threshold to differentiate between water and land pixels in images, relying on Modified Normalized Difference Water Index (MNDWI) values. However, it may inaccurately classify snow and ice as water, posing a limitation in certain environments.
+  - This is only used when not enough sand pixels are detected within the reference shoreline buffer.
+
+INFO - ---------------------------------------------------------------------------------------------------------------------
+INFO - Extracting shorelines for L5 Minimum Shoreline Length: 500
+
+
+INFO - WARNING: CoastSat has hard-coded the value for the minimum shoreline length for L7 to 200
+
+
+INFO - Extracting shorelines for L7 Minimum Shoreline Length: 200
+
+
+INFO - Extracting shorelines for L8 Minimum Shoreline Length: 500
+
+
+WARNING - L8 2025-10-03-22-17-49: Skipped due to cloud cover 31.15% > threshold 10.00%
+WARNING - L8 2025-10-19-22-17-50: Skipped due to cloud cover 36.91% > threshold 10.00%
+INFO - Extracting shorelines for L9 Minimum Shoreline Length: 500
+
+
+WARNING - L9 2025-10-11-22-17-57: Skipped due to cloud cover 80.61% > threshold 10.00%

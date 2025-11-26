@@ -1,0 +1,33 @@
+INFO - Please read the following information carefully:
+
+INFO - find_wl_contours2: A method for extracting shorelines that uses the sand water interface detected with the model to refine the threshold that's used to detect shorelines .
+  - This is the default method used when there are enough sand pixels within the reference shoreline buffer.
+
+INFO - find_wl_contours1: This shoreline extraction method uses a threshold to differentiate between water and land pixels in images, relying on Modified Normalized Difference Water Index (MNDWI) values. However, it may inaccurately classify snow and ice as water, posing a limitation in certain environments.
+  - This is only used when not enough sand pixels are detected within the reference shoreline buffer.
+
+INFO - ---------------------------------------------------------------------------------------------------------------------
+INFO - Extracting shorelines for L5 Minimum Shoreline Length: 500
+
+
+INFO - WARNING: CoastSat has hard-coded the value for the minimum shoreline length for L7 to 200
+
+
+INFO - Extracting shorelines for L7 Minimum Shoreline Length: 200
+
+
+INFO - Extracting shorelines for L8 Minimum Shoreline Length: 500
+
+
+INFO - L8 2025-10-14-10-06-48 cloud cover : 0.00%
+INFO - L8 2025-10-14-10-06-48: sand: 0.00% ,whitewater: 0.00% ,water: 55.49%
+INFO - L8 2025-10-14-10-06-48: Less than 50 sand pixels detected within reference shoreline buffer. Using find_wl_contours1
+INFO - Number of shorelines before removing shorelines < 500m: 1 shorelines. Number of shorelines after filtering shorelines: 1 shorelines
+INFO - Number of shoreline points before removing points within 300m of cloud mask 89
+INFO - Number of shoreline points after removing points within 300m of cloud mask 89
+INFO - Number of shoreline points before removing points within 30m of no data pixel 89
+INFO - Number of shoreline points after removing points within 30m of no data pixel 89
+INFO - Extracting shorelines for L9 Minimum Shoreline Length: 500
+
+
+WARNING - L9 2025-11-07-10-06-54: Skipped due to cloud cover 68.81% > threshold 10.00%

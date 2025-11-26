@@ -1,0 +1,40 @@
+INFO - Please read the following information carefully:
+
+INFO - find_wl_contours2: A method for extracting shorelines that uses the sand water interface detected with the model to refine the threshold that's used to detect shorelines .
+  - This is the default method used when there are enough sand pixels within the reference shoreline buffer.
+
+INFO - find_wl_contours1: This shoreline extraction method uses a threshold to differentiate between water and land pixels in images, relying on Modified Normalized Difference Water Index (MNDWI) values. However, it may inaccurately classify snow and ice as water, posing a limitation in certain environments.
+  - This is only used when not enough sand pixels are detected within the reference shoreline buffer.
+
+INFO - ---------------------------------------------------------------------------------------------------------------------
+INFO - Extracting shorelines for L5 Minimum Shoreline Length: 500
+
+
+INFO - WARNING: CoastSat has hard-coded the value for the minimum shoreline length for L7 to 200
+
+
+INFO - Extracting shorelines for L7 Minimum Shoreline Length: 200
+
+
+INFO - Extracting shorelines for L8 Minimum Shoreline Length: 500
+
+
+INFO - L8 2025-10-03-22-17-49 cloud cover : 4.26%
+INFO - L8 2025-10-03-22-17-49: sand: 1.19% ,whitewater: 4.58% ,water: 43.21%
+INFO - L8 2025-10-03-22-17-49: Greater than 50 sand pixels detected within reference shoreline buffer. Using find_wl_contours2
+INFO - Number of shorelines before removing shorelines < 500m: 1 shorelines. Number of shorelines after filtering shorelines: 1 shorelines
+INFO - Number of shoreline points before removing points within 300m of cloud mask 300
+INFO - Number of shoreline points after removing points within 300m of cloud mask 266
+INFO - Number of shoreline points before removing points within 30m of no data pixel 266
+INFO - Number of shoreline points after removing points within 30m of no data pixel 264
+INFO - L8 2025-10-19-22-17-50 cloud cover : 0.00%
+INFO - L8 2025-10-19-22-17-50: sand: 2.48% ,whitewater: 1.18% ,water: 47.79%
+INFO - L8 2025-10-19-22-17-50: Greater than 50 sand pixels detected within reference shoreline buffer. Using find_wl_contours2
+INFO - Number of shorelines before removing shorelines < 500m: 2 shorelines. Number of shorelines after filtering shorelines: 1 shorelines
+INFO - Number of shoreline points before removing points within 300m of cloud mask 295
+INFO - Number of shoreline points after removing points within 300m of cloud mask 295
+INFO - Number of shoreline points before removing points within 30m of no data pixel 295
+INFO - Number of shoreline points after removing points within 30m of no data pixel 294
+INFO - Extracting shorelines for L9 Minimum Shoreline Length: 500
+
+

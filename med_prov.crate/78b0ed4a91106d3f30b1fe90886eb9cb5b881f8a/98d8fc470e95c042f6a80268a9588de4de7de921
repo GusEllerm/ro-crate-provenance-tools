@@ -1,0 +1,52 @@
+2025-11-24 08:19:20,723 - satellite_download_logger - INFO - Successfully downloaded image ID LANDSAT/LC08/C02/T1_TOA/LC08_075084_20250816 as 2025-08-16-22-17-38_L8_nzd0002_ms.tif
+2025-11-24 08:19:39,126 - satellite_download_logger - INFO - Successfully downloaded image ID LANDSAT/LC08/C02/T1_TOA/LC08_075084_20250917 as 2025-09-17-22-17-48_L8_nzd0002_ms.tif
+2025-11-24 08:19:48,848 - satellite_download_logger - INFO - Successfully downloaded image ID LANDSAT/LC08/C02/T1_TOA/LC08_075084_20251003 as 2025-10-03-22-17-49_L8_nzd0002_ms.tif
+2025-11-24 08:19:55,417 - satellite_download_logger - INFO - Successfully downloaded image ID LANDSAT/LC08/C02/T1_TOA/LC08_075084_20251019 as 2025-10-19-22-17-50_L8_nzd0002_ms.tif
+2025-11-24 08:20:03,294 - satellite_download_logger - INFO - Successfully downloaded image ID LANDSAT/LC09/C02/T1_TOA/LC09_075084_20250808 as 2025-08-08-22-17-36_L9_nzd0002_ms.tif
+2025-11-24 08:20:13,430 - satellite_download_logger - INFO - Successfully downloaded image ID LANDSAT/LC09/C02/T1_TOA/LC09_075084_20250824 as 2025-08-24-22-17-43_L9_nzd0002_ms.tif
+2025-11-24 08:20:21,314 - satellite_download_logger - INFO - Successfully downloaded image ID LANDSAT/LC09/C02/T1_TOA/LC09_075084_20250925 as 2025-09-25-22-17-52_L9_nzd0002_ms.tif
+2025-11-24 08:20:38,514 - satellite_download_logger - INFO - Please read the following information carefully:
+
+2025-11-24 08:20:38,514 - satellite_download_logger - INFO - find_wl_contours2: A method for extracting shorelines that uses the sand water interface detected with the model to refine the threshold that's used to detect shorelines .
+  - This is the default method used when there are enough sand pixels within the reference shoreline buffer.
+
+2025-11-24 08:20:38,514 - satellite_download_logger - INFO - find_wl_contours1: This shoreline extraction method uses a threshold to differentiate between water and land pixels in images, relying on Modified Normalized Difference Water Index (MNDWI) values. However, it may inaccurately classify snow and ice as water, posing a limitation in certain environments.
+  - This is only used when not enough sand pixels are detected within the reference shoreline buffer.
+
+2025-11-24 08:20:38,514 - satellite_download_logger - INFO - ---------------------------------------------------------------------------------------------------------------------
+2025-11-24 08:20:38,519 - satellite_download_logger - INFO - Extracting shorelines for L5 Minimum Shoreline Length: 500
+
+
+2025-11-24 08:20:38,521 - satellite_download_logger - INFO - WARNING: CoastSat has hard-coded the value for the minimum shoreline length for L7 to 200
+
+
+2025-11-24 08:20:38,521 - satellite_download_logger - INFO - Extracting shorelines for L7 Minimum Shoreline Length: 200
+
+
+2025-11-24 08:20:38,522 - satellite_download_logger - INFO - Extracting shorelines for L8 Minimum Shoreline Length: 500
+
+
+2025-11-24 08:20:38,525 - satellite_download_logger - WARNING - L8 2025-08-16-22-17-38: Skipped due to cloud cover 77.98% > threshold 10.00%
+2025-11-24 08:20:38,527 - satellite_download_logger - WARNING - L8 2025-09-17-22-17-48: Skipped due to cloud cover 56.60% > threshold 10.00%
+2025-11-24 08:20:38,530 - satellite_download_logger - INFO - L8 2025-10-03-22-17-49 cloud cover : 0.00%
+2025-11-24 08:20:38,574 - satellite_download_logger - INFO - L8 2025-10-03-22-17-49: sand: 3.77% ,whitewater: 15.04% ,water: 42.19%
+2025-11-24 08:20:38,575 - satellite_download_logger - INFO - L8 2025-10-03-22-17-49: Greater than 50 sand pixels detected within reference shoreline buffer. Using find_wl_contours2
+2025-11-24 08:20:38,592 - satellite_download_logger - INFO - Number of shorelines before removing shorelines < 500m: 1 shorelines. Number of shorelines after filtering shorelines: 1 shorelines
+2025-11-24 08:20:38,592 - satellite_download_logger - INFO - Number of shoreline points before removing points within 300m of cloud mask 203
+2025-11-24 08:20:38,592 - satellite_download_logger - INFO - Number of shoreline points after removing points within 300m of cloud mask 203
+2025-11-24 08:20:38,592 - satellite_download_logger - INFO - Number of shoreline points before removing points within 30m of no data pixel 203
+2025-11-24 08:20:38,592 - satellite_download_logger - INFO - Number of shoreline points after removing points within 30m of no data pixel 203
+2025-11-24 08:20:38,828 - satellite_download_logger - INFO - L8 2025-10-19-22-17-50 cloud cover : 0.00%
+2025-11-24 08:20:38,851 - satellite_download_logger - INFO - L8 2025-10-19-22-17-50: sand: 4.85% ,whitewater: 3.69% ,water: 53.74%
+2025-11-24 08:20:38,851 - satellite_download_logger - INFO - L8 2025-10-19-22-17-50: Greater than 50 sand pixels detected within reference shoreline buffer. Using find_wl_contours2
+2025-11-24 08:20:38,852 - satellite_download_logger - INFO - Number of shorelines before removing shorelines < 500m: 1 shorelines. Number of shorelines after filtering shorelines: 1 shorelines
+2025-11-24 08:20:38,852 - satellite_download_logger - INFO - Number of shoreline points before removing points within 300m of cloud mask 205
+2025-11-24 08:20:38,852 - satellite_download_logger - INFO - Number of shoreline points after removing points within 300m of cloud mask 205
+2025-11-24 08:20:38,852 - satellite_download_logger - INFO - Number of shoreline points before removing points within 30m of no data pixel 205
+2025-11-24 08:20:38,852 - satellite_download_logger - INFO - Number of shoreline points after removing points within 30m of no data pixel 205
+2025-11-24 08:20:38,934 - satellite_download_logger - INFO - Extracting shorelines for L9 Minimum Shoreline Length: 500
+
+
+2025-11-24 08:20:38,937 - satellite_download_logger - WARNING - L9 2025-08-08-22-17-36: Skipped due to cloud cover 13.60% > threshold 10.00%
+2025-11-24 08:20:38,939 - satellite_download_logger - WARNING - L9 2025-08-24-22-17-43: Skipped due to cloud cover 93.95% > threshold 10.00%
+2025-11-24 08:20:38,941 - satellite_download_logger - WARNING - L9 2025-09-25-22-17-52: Skipped due to cloud cover 12.90% > threshold 10.00%

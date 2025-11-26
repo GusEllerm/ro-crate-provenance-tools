@@ -1,0 +1,26 @@
+2025-11-24 08:10:59,515 - satellite_download_logger - INFO - Successfully downloaded image ID LANDSAT/LC09/C02/T1_TOA/LC09_192032_20251031 as 2025-10-31-10-00-14_L9_sar0003_ms.tif
+2025-11-24 08:11:07,497 - satellite_download_logger - INFO - Please read the following information carefully:
+
+2025-11-24 08:11:07,498 - satellite_download_logger - INFO - find_wl_contours2: A method for extracting shorelines that uses the sand water interface detected with the model to refine the threshold that's used to detect shorelines .
+  - This is the default method used when there are enough sand pixels within the reference shoreline buffer.
+
+2025-11-24 08:11:07,498 - satellite_download_logger - INFO - find_wl_contours1: This shoreline extraction method uses a threshold to differentiate between water and land pixels in images, relying on Modified Normalized Difference Water Index (MNDWI) values. However, it may inaccurately classify snow and ice as water, posing a limitation in certain environments.
+  - This is only used when not enough sand pixels are detected within the reference shoreline buffer.
+
+2025-11-24 08:11:07,498 - satellite_download_logger - INFO - ---------------------------------------------------------------------------------------------------------------------
+2025-11-24 08:11:07,503 - satellite_download_logger - INFO - Extracting shorelines for L5 Minimum Shoreline Length: 500
+
+
+2025-11-24 08:11:07,504 - satellite_download_logger - INFO - WARNING: CoastSat has hard-coded the value for the minimum shoreline length for L7 to 200
+
+
+2025-11-24 08:11:07,504 - satellite_download_logger - INFO - Extracting shorelines for L7 Minimum Shoreline Length: 200
+
+
+2025-11-24 08:11:07,505 - satellite_download_logger - INFO - Extracting shorelines for L8 Minimum Shoreline Length: 500
+
+
+2025-11-24 08:11:07,506 - satellite_download_logger - INFO - Extracting shorelines for L9 Minimum Shoreline Length: 500
+
+
+2025-11-24 08:11:07,509 - satellite_download_logger - WARNING - L9 2025-10-31-10-00-14: Skipped due to cloud cover 17.96% > threshold 10.00%
