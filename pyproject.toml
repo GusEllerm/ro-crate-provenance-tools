@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "provenance-context"
+version = "0.2.0"
+description = "Python library for querying RO-Crate provenance metadata from CWL workflow runs. Provides lineage queries, site artifacts, and TOON encoding for LLM prompts."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    {name = "Gus Ellerm"}
+]
+keywords = ["provenance", "ro-crate", "cwl", "lineage", "workflow", "toon"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+# Note: toon-format is not available on PyPI, install manually with:
+# pip install git+https://github.com/toon-format/toon-python.git
+pandas = [
+    "pandas>=1.0.0",
+]
+all = [
+    "provenance-context[pandas]",
+]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "ruff>=0.1.0",
+    "build>=1.0.0",
+    "twine>=4.0.0",
+]
+test = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/GusEllerm/ro-crate-provenance-tools"
+Repository = "https://github.com/GusEllerm/ro-crate-provenance-tools"
+Issues = "https://github.com/GusEllerm/ro-crate-provenance-tools/issues"
+
+[tool.setuptools]
+packages = ["provenance_context"]
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
+
+[tool.ruff]
+line-length = 100
+target-version = "0.2.0"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+ignore = ["E501"]  # Line too long (handled by formatter)
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
